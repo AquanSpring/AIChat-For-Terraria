@@ -1,0 +1,102 @@
+Keybinds.ToggleChat.DisplayName: Toggle Chat
+
+Configs: {
+	AiChatModConfig: {
+		DisplayName: Ai Chat Mod Config
+
+		Protocol: {
+			Label: Protocol
+			Tooltip: ""
+		}
+
+		BaseUrl: {
+			Label: Base Url
+			Tooltip: ""
+		}
+
+		ApiKey: {
+			Label: Api Key
+			Tooltip: ""
+		}
+
+		Model: {
+			Label: Model
+			Tooltip: ""
+		}
+
+		Temperature: {
+			Label: Temperature
+			Tooltip: Controls response randomness. Higher values produce more varied replies. Default: 0.7.
+		}
+
+		TimeoutSeconds: {
+			Label: Timeout Seconds
+			Tooltip: ""
+		}
+
+		MaxTokens: {
+			Label: Max Tokens
+			Tooltip: ""
+		}
+
+		StreamResponses: {
+			Label: Stream Responses
+			Tooltip: ""
+		}
+	}
+
+	AiProviderProtocol: {
+		Tooltip: ""
+
+		OpenAICompatible: {
+			Label: OpenAI Compatible
+			Tooltip: ""
+		}
+
+		ClaudeMessages: {
+			Label: Claude Messages
+			Tooltip: ""
+		}
+
+		OpenAIResponses: {
+			Label: OpenAI Responses
+			Tooltip: ""
+		}
+	}
+}
+
+ConfigUI: {
+	Paste: Paste
+	Clear: Clear
+	ShowSecret: Show
+	HideSecret: Hide
+	ApiKeyHint: The API key is stored in the local client configuration.
+}
+
+UI: {
+	Title: AI CHAT
+	NewConversation: New conversation
+	Model: Model
+	StartConversation: Start a conversation
+	You: You
+	Assistant: AI
+	InputPlaceholder: Message the AI...
+	Send: Send
+	WebSearch: Request search
+	WebSearchHint: Requests the API's own web search. Turning this on does not confirm that a search occurred; check the status below.
+	WebSearchOn: On
+	WebSearchOff: Off
+	StatusConnecting: Connecting to AI
+	StatusSearchRequested: Requesting API web search (unconfirmed)
+	StatusSearching: Searching the web
+	StatusSearchCompleted: API search completed; waiting for reply
+	StatusSearchFailed: API web search failed
+	StatusGenerating: AI is generating
+	StatusGeneratingUnverified: AI is generating (web search unconfirmed)
+	StatusCompleted: Reply completed
+	StatusCompletedWithSearch: Reply completed (API search confirmed)
+	StatusCompletedUnverified: Reply completed (web search unconfirmed)
+	StatusCompletedSearchFailed: Reply completed (API search failed)
+	StatusSearchRequestFailed: Search request failed; check support or turn it off
+	StatusFailed: Request failed
+}

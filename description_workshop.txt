@@ -1,0 +1,1 @@
+An in-game AI chat client with a sidebar for conversations, persistent history, streaming replies, and support for Chinese model gateways, Claude, GPT, and compatible proxies.

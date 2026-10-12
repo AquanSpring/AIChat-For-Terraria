@@ -1,0 +1,102 @@
+Keybinds.ToggleChat.DisplayName: 打开聊天
+
+Configs: {
+	AiChatModConfig: {
+		DisplayName: AI 聊天设置
+
+		Protocol: {
+			Label: API 协议
+			Tooltip: 选择接口格式
+		}
+
+		BaseUrl: {
+			Label: API 地址
+			Tooltip: 接口根地址
+		}
+
+		ApiKey: {
+			Label: API 密钥
+			Tooltip: 可直接编辑、粘贴、清空
+		}
+
+		Model: {
+			Label: 默认模型
+			Tooltip: 填写一个模型 ID
+		}
+
+		Temperature: {
+			Label: 温度
+			Tooltip: 控制回复的随机性，数值越高回复越发散，默认值为 0.7
+		}
+
+		TimeoutSeconds: {
+			Label: 请求超时（秒）
+			Tooltip: 网络请求最长等待时间
+		}
+
+		MaxTokens: {
+			Label: 最大输出 Token 数
+			Tooltip: 限制单次回复的最大 Token 数量
+		}
+
+		StreamResponses: {
+			Label: 流式输出
+			Tooltip: 边生成边显示回复内容
+		}
+	}
+
+	AiProviderProtocol: {
+		// Tooltip: ""
+
+		OpenAICompatible: {
+			Label: OpenAI 兼容
+			Tooltip: 适用于 OpenAI、DeepSeek 及兼容中转接口
+		}
+
+		ClaudeMessages: {
+			Label: Claude 消息
+			Tooltip: Anthropic Claude Messages API
+		}
+
+		OpenAIResponses: {
+			Label: OpenAI Responses
+			Tooltip: OpenAI Responses API 协议
+		}
+	}
+}
+
+ConfigUI: {
+	Paste: 粘贴
+	Clear: 清空
+	ShowSecret: 显示
+	HideSecret: 隐藏
+	ApiKeyHint: API 密钥会保存在本机配置中
+}
+
+UI: {
+	Title: AI 聊天
+	NewConversation: 新建对话
+	Model: 模型
+	StartConversation: 开始一段对话
+	You: 你
+	Assistant: AI
+	InputPlaceholder: 输入消息...
+	Send: 发送
+	WebSearch: 请求联网
+	WebSearchHint: 仅请求 API 自身的联网能力；开启开关不代表已联网。实际结果以状态提示为准。
+	WebSearchOn: 开
+	WebSearchOff: 关
+	StatusConnecting: 正在连接 AI
+	StatusSearchRequested: 正在请求 API 联网（尚未确认）
+	StatusSearching: 正在联网搜索
+	StatusSearchCompleted: API 已执行搜索，等待回复
+	StatusSearchFailed: API 搜索失败
+	StatusGenerating: AI 正在生成
+	StatusGeneratingUnverified: AI 正在生成（未确认联网）
+	StatusCompleted: 回复完成
+	StatusCompletedWithSearch: 回复完成（API 已执行搜索）
+	StatusCompletedUnverified: 回复完成（API 未确认联网，请勿视为联网结果）
+	StatusCompletedSearchFailed: 回复完成（API 搜索失败，请勿视为联网结果）
+	StatusSearchRequestFailed: 联网请求失败，请检查 API 支持情况或关闭联网
+	StatusFailed: 请求失败
+}

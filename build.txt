@@ -1,0 +1,3 @@
+displayName = AiChat
+author = 热锅上的蚂蚁
+version = 0.1
